@@ -1,6 +1,6 @@
 Link: [DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis?resource=download)
 
-🧩 1. Database Service A — Order Management System (OMS)
+🧩 1. Database Service A — Order Management System (OMS): /n
 Focus: Handles everything from the customer order until the shipment is prepared and scheduled.
 Includes columns related to:
 Customer and Order details
