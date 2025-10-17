@@ -12,7 +12,7 @@ This project implements a complete, end-to-end ELT (Extract, Load, Transform) pi
 * **Apache Airflow** ✈️: Orchestrates the ELT pipeline, manages task dependencies, and schedules runs.
 * **SQL** ✍️: The core logic for all Transform operations (from staging to dim/fact tables).
 * **Python (Pandas)** 🐍: Used in Airflow for Extract & Load (ingestion) scripts.
-* **Metabase** 📊: The BI tool used to connect to the DWH and build interactive dashboards.
+* **Tableau** 📊: The BI tool used to connect to the DWH and build interactive dashboards.
 
 ## 🏗️ System Architecture
 
