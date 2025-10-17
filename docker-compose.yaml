@@ -1,0 +1,112 @@
+# docker-compose.yml
+
+services:
+  postgres_oms_db:
+    image: postgres:13
+    container_name: postgres_oms_db
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=oms_db
+    ports:
+      - "5433:5432" 
+    volumes:
+      - oms_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d oms_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres_slms_db:
+    image: postgres:13
+    container_name: postgres_slms_db
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=slms_db
+    ports:
+      - "5434:5432" 
+    volumes:
+      - slms_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d slms_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres_dwh_db:
+    image: postgres:13
+    container_name: postgres_dwh_db
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=supply_chain_dwh
+    ports:
+      - "5435:5432" 
+    volumes:
+      - dwh_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d supply_chain_dwh"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --- Airflow Services ---
+  postgres_airflow_db:
+    image: postgres:13
+    container_name: postgres_airflow_db
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    volumes:
+      - airflow_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow -d airflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  airflow-webserver:
+    build: .
+    container_name: airflow_webserver
+    depends_on:
+      - postgres_airflow_db
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres_airflow_db/airflow
+      - AIRFLOW_UID=${AIRFLOW_UID}
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    ports:
+      - "8081:8080"
+    command: webserver
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  airflow-scheduler:
+    build: .
+    container_name: airflow_scheduler
+    depends_on:
+      - airflow-webserver
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres_airflow_db/airflow
+      - AIRFLOW_UID=${AIRFLOW_UID}
+    command: scheduler
+
+volumes:
+  oms_db_data:
+  slms_db_data:
+  dwh_db_data:
+  airflow_db_data:
