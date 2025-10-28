@@ -79,8 +79,9 @@ _AIRFLOW_WWW_USER_USERNAME=airflow
 _AIRFLOW_WWW_USER_PASSWORD=airflow
 
 
-_PIP_ADDITIONAL_REQUIREMENTS=apache-airflow-providers-postgres
-    ```
+_PIP_ADDITIONAL_REQUIREMENTS=apache-airflow-providers-postgres,pandas,sqlalchemy    
+
+```
 
 4.  Start all services:
     ```bash
