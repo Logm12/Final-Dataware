@@ -67,8 +67,21 @@ The destination schema is a Star Schema, which is de-normalized to optimize for 
     git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
     cd your-repo-name
     ```
+2. Write .env file:
+    ```bash
+AIRFLOW_IMAGE_NAME=apache/airflow:3.1.0
 
-2.  Build and start all services:
+AIRFLOW_UID=50000
+
+AIRFLOW_PROJ_DIR=.
+
+_AIRFLOW_WWW_USER_USERNAME=airflow
+_AIRFLOW_WWW_USER_PASSWORD=airflow
+
+_PIP_ADDITIONAL_REQUIREMENTS=apache-airflow-providers-postgres
+    ```   
+
+4.  Start all services:
     ```bash
     docker-compose up -d --build
     ```
