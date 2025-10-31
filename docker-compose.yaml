@@ -38,6 +38,7 @@ services:
   # Database metadata cho Airflow
   postgres:
     image: postgres:16
+    hostname: postgres
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
@@ -54,6 +55,7 @@ services:
   # Database cho DWH (OLTP, Staging)
   dwh-postgres:
     image: postgres:14-alpine
+    hostname: dwh-postgres
     container_name: dwh_postgres_container
     ports:
       # === THAY ĐỔI CỦA BẠN ===
@@ -74,6 +76,7 @@ services:
 
   redis:
     image: redis:7.2-bookworm
+    hostname: redis
     expose:
       - 6379
     healthcheck:
@@ -86,6 +89,7 @@ services:
 
   airflow-apiserver:
     <<: *airflow-common
+    hostname: airflow-apiserver    
     command: api-server
     ports:
       # === THAY ĐỔI CỦA BẠN ===
@@ -104,6 +108,7 @@ services:
 
   airflow-scheduler:
     <<: *airflow-common
+    hostname: airflow-scheduler
     command: scheduler
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
@@ -119,6 +124,7 @@ services:
 
   airflow-dag-processor:
     <<: *airflow-common
+    hostname: airflow-dag-processor
     command: dag-processor
     healthcheck:
       test: ["CMD-SHELL", 'airflow jobs check --job-type DagProcessorJob --hostname "$${HOSTNAME}"']
@@ -134,6 +140,7 @@ services:
 
   airflow-worker:
     <<: *airflow-common
+    hostname: airflow-worker
     command: celery worker
     healthcheck:
       test:
@@ -156,6 +163,7 @@ services:
 
   airflow-triggerer:
     <<: *airflow-common
+    hostname: airflow-triggerer
     command: triggerer
     healthcheck:
       test: ["CMD-SHELL", 'airflow jobs check --job-type TriggererJob --hostname "$${HOSTNAME}"']
@@ -171,6 +179,7 @@ services:
 
   airflow-init:
     <<: *airflow-common
+    hostname: airflow-init
     environment:
       <<: *airflow-common-env
       AIRFLOW__CORE__EXECUTOR: SequentialExecutor
@@ -184,6 +193,7 @@ services:
     user: "0:0"
 
   airflow-cli:
+    hostname: airflow-cli
     <<: *airflow-common
     profiles:
       - debug
@@ -198,6 +208,7 @@ services:
       <<: *airflow-common-depends-on
 
   flower:
+    hostname: flower
     <<: *airflow-common
     command: celery flower
     profiles:
