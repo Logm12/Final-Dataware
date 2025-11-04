@@ -1,6 +1,4 @@
-/*
-Lấy các tổ hợp duy nhất của các cờ/thuộc tính vận chuyển
-*/
+
 INSERT INTO dwh.dim_shipping (
     shipping_mode,
     delivery_status,
@@ -13,4 +11,5 @@ SELECT DISTINCT
 FROM staging.stg_slms_shipments
 WHERE shipping_mode IS NOT NULL
    OR delivery_status IS NOT NULL
+
    OR delivery_risk IS NOT NULL;
