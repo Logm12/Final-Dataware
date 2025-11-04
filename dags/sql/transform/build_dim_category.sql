@@ -6,8 +6,9 @@ INSERT INTO dwh.dim_category (
 SELECT DISTINCT
     s.category_id,
     s.category_name,
-    d.department_key -- Lấy khóa surrogate từ dim_department
+    d.department_key
 FROM staging.stg_oms_order_items s
 LEFT JOIN dwh.dim_department d 
     ON s.department_id = d.department_id
+
 WHERE s.category_id IS NOT NULL;
