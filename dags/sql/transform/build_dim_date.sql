@@ -23,5 +23,4 @@ SELECT
     EXTRACT(YEAR FROM d.full_date) AS year,
     (EXTRACT(ISODOW FROM d.full_date) IN (6, 7)) AS is_weekend
 FROM all_dates d
-WHERE d.full_date IS NOT NULL
-GROUP BY d.full_date; -- Đảm bảo duy nhất
+WHERE d.full_date IS NOT NULL;
