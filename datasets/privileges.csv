@@ -1,0 +1,11 @@
+id,privilege_name
+1,View Orders
+2,Edit Orders
+3,Create Orders
+4,Delete Orders
+5,View Inventory
+6,Edit Inventory
+7,Manage Users
+8,View Reports
+9,Generate Invoices
+10,Approve Purchase Orders

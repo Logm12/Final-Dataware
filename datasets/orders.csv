@@ -1,0 +1,31 @@
+id,employee_id,customer_id,order_date,shipped_date,shipper_id,ship_name,ship_address,ship_city,ship_state_province,ship_zip_postal_code,ship_country_region,shipping_fee,taxes,payment_type,paid_date,notes,tax_rate,tax_status_id,status_id
+1,3,13,2025-02-20 00:00:00,2025-02-26 00:00:00,3,Ship Name 1,8078 Delivery Street,Houston,NY,45818,USA,15.85,14.35,Check,2025-02-25 00:00:00,Order 1 special instructions,0.0549,4,9
+2,9,7,2024-04-04 00:00:00,2024-04-05 00:00:00,5,Ship Name 2,4084 Delivery Street,Phoenix,CA,73108,USA,29.46,80.01,Check,2024-04-08 00:00:00,Order 2 special instructions,0.0599,6,1
+3,8,9,2025-11-26 00:00:00,2025-12-02 00:00:00,8,Ship Name 3,6422 Delivery Street,Houston,TX,28795,USA,28.68,52.57,Wire Transfer,2025-11-29 00:00:00,Order 3 special instructions,0.0664,9,2
+4,7,9,2025-06-24 00:00:00,2025-06-25 00:00:00,3,Ship Name 4,844 Delivery Street,Houston,IL,32266,USA,42.05,6.55,Check,2025-06-26 00:00:00,Order 4 special instructions,0.0522,1,9
+5,9,11,2025-06-25 00:00:00,2025-06-28 00:00:00,10,Ship Name 5,6989 Delivery Street,Los Angeles,IL,40842,USA,25.25,94.59,Check,2025-06-29 00:00:00,Order 5 special instructions,0.0501,9,1
+6,10,1,2025-09-01 00:00:00,2025-09-04 00:00:00,5,Ship Name 6,3922 Delivery Street,Houston,CA,20813,USA,26.56,31.87,Wire Transfer,2025-09-06 00:00:00,Order 6 special instructions,0.0996,1,8
+7,3,12,2025-01-03 00:00:00,2025-01-06 00:00:00,4,Ship Name 7,8633 Delivery Street,New York,IL,81670,USA,45.86,8.15,Credit Card,2025-01-08 00:00:00,Order 7 special instructions,0.0955,9,0
+8,2,11,2024-01-06 00:00:00,2024-01-09 00:00:00,4,Ship Name 8,2809 Delivery Street,Chicago,CA,73446,USA,23.13,31.41,Cash,2024-01-07 00:00:00,Order 8 special instructions,0.0972,3,5
+9,7,8,2024-07-04 00:00:00,2024-07-08 00:00:00,9,Ship Name 9,4620 Delivery Street,Houston,TX,58735,USA,30.14,70.84,Credit Card,2024-07-07 00:00:00,Order 9 special instructions,0.0720,3,3
+10,10,7,2025-06-15 00:00:00,2025-06-21 00:00:00,4,Ship Name 10,767 Delivery Street,Houston,CA,29571,USA,17.00,52.09,Credit Card,2025-06-16 00:00:00,Order 10 special instructions,0.0621,1,3
+11,1,2,2025-02-24 00:00:00,2025-02-28 00:00:00,8,Ship Name 11,4641 Delivery Street,Houston,AZ,58442,USA,13.09,59.08,Credit Card,2025-02-26 00:00:00,Order 11 special instructions,0.0969,4,3
+12,1,11,2025-03-23 00:00:00,2025-03-30 00:00:00,7,Ship Name 12,9227 Delivery Street,Phoenix,CA,60818,USA,14.88,21.33,Check,2025-03-27 00:00:00,Order 12 special instructions,0.0862,2,8
+13,2,2,2025-04-19 00:00:00,2025-04-23 00:00:00,1,Ship Name 13,8272 Delivery Street,Los Angeles,AZ,87900,USA,8.77,79.71,Wire Transfer,2025-04-21 00:00:00,Order 13 special instructions,0.0548,5,9
+14,2,11,2025-01-09 00:00:00,2025-01-13 00:00:00,1,Ship Name 14,319 Delivery Street,Los Angeles,NY,98614,USA,33.91,65.60,Cash,2025-01-14 00:00:00,Order 14 special instructions,0.0655,2,1
+15,7,3,2024-03-06 00:00:00,2024-03-13 00:00:00,9,Ship Name 15,7667 Delivery Street,Houston,NY,52052,USA,5.59,95.52,Wire Transfer,2024-03-10 00:00:00,Order 15 special instructions,0.0805,3,4
+16,9,1,2025-02-05 00:00:00,2025-02-12 00:00:00,10,Ship Name 16,3590 Delivery Street,Phoenix,IL,79806,USA,23.84,72.89,Credit Card,2025-02-10 00:00:00,Order 16 special instructions,0.0536,7,7
+17,9,4,2025-02-18 00:00:00,2025-02-24 00:00:00,9,Ship Name 17,7060 Delivery Street,New York,CA,92574,USA,7.76,42.18,Wire Transfer,2025-02-19 00:00:00,Order 17 special instructions,0.0827,4,7
+18,5,9,2025-12-04 00:00:00,2025-12-09 00:00:00,8,Ship Name 18,4395 Delivery Street,Chicago,TX,26374,USA,27.51,9.59,Wire Transfer,2025-12-08 00:00:00,Order 18 special instructions,0.0554,7,1
+19,5,9,2025-06-13 00:00:00,2025-06-19 00:00:00,9,Ship Name 19,7026 Delivery Street,Chicago,AZ,28450,USA,37.73,19.66,Wire Transfer,2025-06-15 00:00:00,Order 19 special instructions,0.0935,3,0
+20,8,8,2025-08-21 00:00:00,2025-08-26 00:00:00,7,Ship Name 20,4065 Delivery Street,Phoenix,TX,51040,USA,31.62,54.82,Check,2025-08-22 00:00:00,Order 20 special instructions,0.0634,3,0
+21,10,15,2025-10-17 00:00:00,2025-10-23 00:00:00,6,Ship Name 21,7298 Delivery Street,Houston,AZ,60830,USA,25.84,77.65,Credit Card,2025-10-18 00:00:00,Order 21 special instructions,0.0554,5,0
+22,7,5,2024-05-15 00:00:00,2024-05-16 00:00:00,2,Ship Name 22,4608 Delivery Street,Chicago,AZ,78527,USA,37.50,8.28,Cash,2024-05-17 00:00:00,Order 22 special instructions,0.0997,2,0
+23,2,9,2025-06-18 00:00:00,2025-06-24 00:00:00,3,Ship Name 23,9331 Delivery Street,Houston,IL,91961,USA,9.12,68.06,Cash,2025-06-19 00:00:00,Order 23 special instructions,0.0715,6,9
+24,9,5,2024-03-30 00:00:00,2024-03-31 00:00:00,1,Ship Name 24,8328 Delivery Street,Los Angeles,CA,35994,USA,38.36,42.86,Wire Transfer,2024-04-01 00:00:00,Order 24 special instructions,0.0918,2,3
+25,1,4,2024-07-16 00:00:00,2024-07-20 00:00:00,9,Ship Name 25,1906 Delivery Street,Chicago,IL,43420,USA,29.00,33.88,Wire Transfer,2024-07-19 00:00:00,Order 25 special instructions,0.0793,0,4
+26,6,10,2025-02-18 00:00:00,2025-02-22 00:00:00,9,Ship Name 26,7140 Delivery Street,Houston,AZ,61343,USA,32.21,97.87,Wire Transfer,2025-02-20 00:00:00,Order 26 special instructions,0.0996,5,0
+27,3,15,2025-02-06 00:00:00,2025-02-08 00:00:00,7,Ship Name 27,9709 Delivery Street,New York,AZ,18882,USA,47.30,52.26,Cash,2025-02-10 00:00:00,Order 27 special instructions,0.0511,1,7
+28,8,5,2025-10-25 00:00:00,2025-10-29 00:00:00,1,Ship Name 28,7182 Delivery Street,Phoenix,NY,10015,USA,24.73,46.65,Check,2025-10-27 00:00:00,Order 28 special instructions,0.0788,8,3
+29,8,1,2025-12-21 00:00:00,2025-12-22 00:00:00,5,Ship Name 29,4906 Delivery Street,Los Angeles,NY,85263,USA,31.35,49.77,Check,2025-12-22 00:00:00,Order 29 special instructions,0.0924,4,8
+30,2,3,2024-04-21 00:00:00,2024-04-22 00:00:00,3,Ship Name 30,3646 Delivery Street,Houston,TX,34617,USA,32.03,75.52,Credit Card,2024-04-23 00:00:00,Order 30 special instructions,0.0502,9,0

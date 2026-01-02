@@ -1,0 +1,11 @@
+id,tax_status_name
+0,Tax Exempt
+1,Taxable
+2,Tax Pending
+3,Tax Calculated
+4,Tax Paid
+5,Tax Waived
+6,Tax Deferred
+7,Tax Applied
+8,Tax Verified
+9,Tax Approved
