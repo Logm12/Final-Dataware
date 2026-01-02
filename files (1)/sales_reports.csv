@@ -1,0 +1,11 @@
+group_by,display,title,filter_row_source,default
+Sales by Employee,Display 1,Sales by Employee Report,Filter 1,1
+Sales by Product,Display 2,Sales by Product Report,Filter 2,0
+Sales by Region,Display 3,Sales by Region Report,Filter 3,1
+Monthly Sales,Display 4,Monthly Sales Report,Filter 4,0
+Quarterly Sales,Display 5,Quarterly Sales Report,Filter 5,1
+Annual Sales,Display 6,Annual Sales Report,Filter 6,0
+Customer Analysis,Display 7,Customer Analysis Report,Filter 7,1
+Product Performance,Display 8,Product Performance Report,Filter 8,0
+Revenue Breakdown,Display 9,Revenue Breakdown Report,Filter 9,1
+Profit Margin Analysis,Display 10,Profit Margin Analysis Report,Filter 10,0

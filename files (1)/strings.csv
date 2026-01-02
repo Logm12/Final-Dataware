@@ -1,0 +1,11 @@
+string_id,string_data
+1,Welcome to the system
+2,Order successfully created
+3,Payment processed
+4,Invoice generated
+5,Shipment dispatched
+6,Inventory updated
+7,User logged in
+8,Report generated
+9,Error occurred
+10,Action completed successfully
