@@ -1,0 +1,16 @@
+﻿customer_id,company,first_name,last_name,email_address
+10,Company 10 Ltd,Mary,Williams,customer10@company10.com
+9,Company 9 Ltd,Emily,Johnson,customer9@company9.com
+6,Company 6 Ltd,David,Smith,customer6@company6.com
+12,Company 12 Ltd,John,Brown,customer12@company12.com
+3,Company 3 Ltd,Lisa,Martinez,customer3@company3.com
+1,Company 1 Ltd,Mary,Smith,customer1@company1.com
+11,Company 11 Ltd,Emily,Garcia,customer11@company11.com
+5,Company 5 Ltd,James,Rodriguez,customer5@company5.com
+15,Company 15 Ltd,Emily,Miller,customer15@company15.com
+8,Company 8 Ltd,Jane,Brown,customer8@company8.com
+14,Company 14 Ltd,Robert,Rodriguez,customer14@company14.com
+4,Company 4 Ltd,Lisa,Jones,customer4@company4.com
+7,Company 7 Ltd,Emily,Davis,customer7@company7.com
+13,Company 13 Ltd,Emily,Rodriguez,customer13@company13.com
+2,Company 2 Ltd,James,Garcia,customer2@company2.com
