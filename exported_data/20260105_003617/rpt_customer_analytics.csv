@@ -1,0 +1,16 @@
+﻿customer_id,company,customer_name,total_orders,lifetime_value,avg_order_value,last_order_date,days_since_last_order
+1,Company A,Anna Bedecs,2,2410.75,602.6875,2006-05-24 00:00:00,7165
+3,Company C,Thomas Axen,3,3790.0,291.53846153846155,2006-04-25 17:26:53,7193
+4,Company D,Christina Lee,4,5709.0,634.3333333333334,2006-04-25 17:26:53,7193
+6,Company F,Francisco Pérez-Olaeta,5,8007.5,1334.5833333333333,2006-06-23 00:00:00,7135
+7,Company G,Ming-Yang Xie,1,13800.0,13800.0,2006-03-24 00:00:00,7226
+8,Company H,Elizabeth Andersen,5,4683.0,780.5,2006-06-05 00:00:00,7153
+9,Company I,Sven Mortensen,2,3786.5,1262.1666666666667,2006-06-05 00:00:00,7153
+10,Company J,Roland Wacker,4,1412.5,235.41666666666666,2006-05-24 00:00:00,7165
+11,Company K,Peter Krschne,2,1019.5,339.8333333333333,2006-05-24 00:00:00,7165
+12,Company L,John Edwards,1,1190.0,595.0,2006-01-22 00:00:00,7287
+25,Company Y,John Rodman,2,860.0,430.0,2006-06-05 00:00:00,7153
+26,Company Z,Run Liu,2,3625.25,906.3125,2006-06-05 00:00:00,7153
+27,Company AA,Karen Toh,1,1505.0,752.5,2006-01-15 00:00:00,7294
+28,Company BB,Amritansh Raghav,3,15432.5,3858.125,2006-06-07 00:00:00,7151
+29,Company CC,Soo Jung Lee,3,2905.5,968.5,2006-06-05 00:00:00,7153

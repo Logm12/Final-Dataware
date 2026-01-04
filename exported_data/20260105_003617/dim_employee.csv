@@ -1,0 +1,11 @@
+﻿employee_id,company,last_name,first_name,email_address,job_title
+4,Our Company Inc,White,Tom,employee4@ourcompany.com,Manager
+1,Our Company Inc,Thompson,Laura,employee1@ourcompany.com,Manager
+10,Our Company Inc,Harris,Laura,employee10@ourcompany.com,Sales Rep
+3,Our Company Inc,Harris,Tom,employee3@ourcompany.com,Sales Rep
+2,Our Company Inc,Thompson,Anna,employee2@ourcompany.com,Sales Rep
+5,Our Company Inc,Lee,Laura,employee5@ourcompany.com,Coordinator
+7,Our Company Inc,Harris,Anna,employee7@ourcompany.com,Coordinator
+9,Our Company Inc,Harris,Mark,employee9@ourcompany.com,Sales Rep
+6,Our Company Inc,Harris,Laura,employee6@ourcompany.com,Supervisor
+8,Our Company Inc,Lee,Steve,employee8@ourcompany.com,Specialist
